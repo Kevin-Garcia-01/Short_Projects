@@ -1,0 +1,296 @@
+/*#B61CF1*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;;  
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+/*Fuentes*/
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 50% -20.71%, #ffeaff 0, #ffd0ff 25%, #e6b1fc 50%, #c094e9 75%, #9e7edc 100%);
+}
+
+.container{
+     max-width: 1000px;
+     min-width: 50%px;
+     width: 100%;
+     background: #ffffff;
+     border-radius: 12px;
+     margin: 0 20px;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.content .image-box{
+    max-width: 60%;
+    margin: 10px 10px;
+}
+
+.content .image-box img{
+    width: 100%;
+}
+
+.content .topic{
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #B61CF1;
+}
+
+.content form{
+width: 50%;
+margin: 30px 30px 10px 0;
+
+}
+
+.content .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 16px 0;
+    position: relative;
+}
+
+.content .input-box input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    padding-left: 16px;
+    background: #e5b1fcb0;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.content .message-box textarea:focus,
+.content .message-box textarea:valid,
+.content .input-box input:focus,
+.content .input-box input:valid {
+    background-color: #fff;
+    border-color: #B61CF1;
+}
+
+.content .input-box label{
+    position: absolute;
+    left: 18px;
+    top: 48%;
+    color: #60137f;
+    justify-content: center;
+    justify-items: center;
+    pointer-events: none;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    padding: 0 4px;
+}
+
+.content .message-box textarea:focus ~ label,
+.content .message-box textarea:valid ~ label,
+.content .input-box input:valid ~ label,
+.content .input-box input:focus ~ label{
+    top:0;
+    left: 12px;
+    color: #B61CF1;
+    background: #ffff;
+}
+
+.content .message-box textarea:not(:focus):not(:valid) {
+  background-color: #e5b1fcb0;
+  border-color: transparent;
+}
+
+.content .message-box{
+    min-height: 100px;
+    position: relative;
+}
+
+.content .message-box textarea{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    resize: none;
+    outline: none;
+    background: #e5b1fcb0;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    padding: 10px 10px 10px 10px;
+    font-size: 1.4rem; 
+}
+
+.content .message-box label{
+  position: absolute;
+  left: 18px;
+  top: 20%;
+  color: #60137f;
+  justify-content: center;
+  justify-items: center;
+  pointer-events: none;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  padding: 0 4px;
+}
+
+.content .input-box input[type="submit"]{
+  padding-left: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #B61CF1;
+  cursor: pointer;
+  border-color: transparent;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.content .input-box input[type = "submit"]:hover{
+  background-color: #c04aef;
+}
+
+@media(max-width:1000px) {
+  .content .image-box{
+    max-width: 50%;
+  }
+  .content{
+    padding: 20px 20px 20px 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media(max-width:600px) {
+  .content .image-box{
+    display: none; 
+  }
+  .content form{
+    width: 100%;
+    margin: 20px 20px 20px 20px;
+  } 
+
+  .content .topic{
+    justify-content: center;
+    align-items: center;
+  }
+}
+
